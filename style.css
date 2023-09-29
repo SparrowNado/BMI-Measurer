@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@600&family=Playfair+Display:ital,wght@0,500;1,500&family=Roboto:wght@500&display=swap');
+
+body {
+    background-image: linear-gradient(to right, #6499E9 , #9EDDFF);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+button {
+    background-color: rgba(0,0,0,0);
+    outline: none;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 5px 0px;
+    border: 2px solid #201f1d;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,.4);
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 2px solid rgba(0,0,0,.4);
+    background-color: rgb(60,60,60);
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    color: #000;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+form p:nth-child(1){
+    margin-top: 0;
+}
+
+.panel {
+    margin-top: 20px;
+    float: none;
+}
+
+@media (min-width: 768px) {
+    .panel {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .panel {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+.text-center {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+
+
+}
+
+
+#results{
+    border-style: 5px black;
+    background:transparent;
+    height: 50px;
+    padding-top: 50px;
+    border-radius: 15px;
+
+}
+
+
+.image-fader {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .image-fader img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: imagefade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+  }
+  
+  @keyframes imagefade {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  .image-fader img:nth-of-type(1) {
+    animation-delay: 6s;
+  }
+  .image-fader img:nth-of-type(2) {
+    animation-delay: 4s;
+  }
+  .image-fader img:nth-of-type(3) {
+    animation-delay: 2s;
+  }
+  .image-fader img:nth-of-type(4) {
+    animation-delay: 0;
+  }
